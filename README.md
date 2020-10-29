@@ -9,9 +9,9 @@ ru.fmordashev.page.YandexResultPage#isSeemsLikeTextHeaderDisplayed
 
 * Были проблемы с локатором ru.fmordashev.page.YandexResultPage#predictionBulletList
 Я установил утилитку Xpath-Helper для Chrome, проверял валидность xpath-ов по ней.
-Вроде бы локатор //div[@class='CbirItem']//div[@class='Tags']/a должен был сработать, но не получалось. Я не хотел слишком долго копать в эту сторону, поэтому сделал абсолютный путь до элемента
+Вроде бы локатор //div[@class='CbirTags']//div[@class='Tags']/a должен был сработать, но не получалось. Я не хотел слишком долго копать в эту сторону, поэтому сделал абсолютный путь до элемента
 Можно было поступить красивее и сделать указатель по css
-@FindBy(css = "div.CbirItem div.Tags a")
+@FindBy(css = "div.CbirTags div.Tags a")
 Я проверил - решение рабочее
 
 * Столкнулся с тем, что клик по кнопке "Картинки" из заглавной страницы яндекса открывает новую вкладку. 
